@@ -10,7 +10,6 @@ import android.widget.SeekBar
 import android.widget.TextView
 
 object ColorPicker {
-    private lateinit var view: View
     private var color = Color.WHITE
     private var r = 0
     private var g = 0

@@ -17,4 +17,9 @@
     <item android:id="@+id/expo"
         android:title="@string/expo"
         app:showAsAction="never"/>
+
+    <item android:id="@+id/help"
+        android:title="@string/help"
+        app:showAsAction="never"/>
+
 </menu>

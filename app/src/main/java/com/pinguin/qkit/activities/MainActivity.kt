@@ -2,7 +2,9 @@ package com.pinguin.qkit.activities
 
 import android.app.AlertDialog
 import android.content.DialogInterface
+import android.content.Intent
 import android.content.res.AssetManager
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.Menu
@@ -81,6 +83,14 @@ class MainActivity : AppCompatActivity() {
                 else
                     Toast.makeText(this, "Неудалось экспортировать изображение", Toast.LENGTH_SHORT)
                         .show()
+            }
+            R.id.help -> {
+                startActivity(
+                    Intent(
+                        Intent.ACTION_VIEW,
+                        Uri.parse("https://github.com/PPinguin/QKit/wiki")
+                    )
+                )
             }
         }
         return true
