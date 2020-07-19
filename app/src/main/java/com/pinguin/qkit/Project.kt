@@ -6,7 +6,6 @@ import android.graphics.Bitmap
 import android.graphics.Color
 import android.net.Uri
 import android.os.Environment
-import android.util.Log
 import androidx.core.view.drawToBitmap
 import com.pinguin.qkit.commands.*
 import com.pinguin.qkit.commands.actions.*
@@ -30,7 +29,6 @@ object Project {
             this.name = name
             true
         } catch (e: Exception) {
-            Log.e("creating", e.message!!)
             false
         }
     }
@@ -50,7 +48,6 @@ object Project {
             this.name = name.takeWhile { it != '.' }
             true
         } catch (e: Exception) {
-            Log.e("OPENED", e.message ?: "!!!")
             false
         } finally {
             if (fis != null) {
@@ -74,7 +71,6 @@ object Project {
             fos.write(text.toByteArray())
             true
         } catch (e: Exception) {
-            Log.e("SAVED", e.message ?: "!!!")
             false
         } finally {
             if (fos != null) {
@@ -107,7 +103,6 @@ object Project {
             }
             return true
         } catch (e: Exception) {
-            Log.e("EXPO", e.message!!)
             return false
         } finally {
             if (fos != null) {

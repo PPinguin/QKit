@@ -7,10 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import androidx.recyclerview.widget.RecyclerView
-import com.pinguin.qkit.commands.Action
-import com.pinguin.qkit.commands.Command
-import com.pinguin.qkit.commands.Comment
-import com.pinguin.qkit.commands.Element
+import com.pinguin.qkit.commands.*
 
 class CommandsAdapter(val context: Context, private val list: MutableList<Command>) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
