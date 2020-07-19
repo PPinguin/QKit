@@ -1,0 +1,50 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionBarStyle">@style/ThemeOverlay.AppCompat.Dark</item>
+        <item name="editTextStyle">@style/EditTextCustom</item>
+        <item name="actionOverflowMenuStyle">@style/CustomMenu</item>
+        <item name="fontFamily">@font/roboto_mono</item>
+        <item name="android:fontFamily">@font/roboto_mono</item>
+        <item name="elevation">0dp</item>
+        <item name="android:popupMenuStyle">@style/CustomMenu</item>
+        <item name="android:textColorSecondary">@color/WHITE</item>
+    </style>
+
+    <style name="EditDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:padding">4dp</item>
+        <item name="dividerHorizontal">@drawable/divider8</item>
+        <item name="android:windowBackground">@drawable/window_background</item>
+        <item name="android:buttonBarNeutralButtonStyle">@style/DialogButton</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/DialogButton</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/DialogButton</item>
+    </style>
+
+    <style name="CustomDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@drawable/window_background</item>
+        <item name="android:buttonBarNeutralButtonStyle">@style/DialogButton</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/DialogButton</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/DialogButton</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="DialogButton" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="EditTextCustom" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/edit_text_background</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="CustomMenu" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@drawable/window_background</item>
+    </style>
+
+</resources>
