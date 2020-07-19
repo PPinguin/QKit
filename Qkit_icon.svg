@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="256px"
+   height="256px"
+   viewBox="0 0 256 256"
+   version="1.1"
+   id="SVGRoot"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="Qkit_icon.svg"
+   inkscape:export-filename="/home/vlad/qkit-icon.png"
+   inkscape:export-xdpi="192"
+   inkscape:export-ydpi="192">
+  <defs
+     id="defs815" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="153.62355"
+     inkscape:cy="143.03828"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:grid-bbox="true" />
+  <metadata
+     id="metadata818">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="opacity:1;fill:#2979ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       id="path1371"
+       cx="128"
+       cy="128"
+       r="128" />
+    <ellipse
+       style="opacity:1;fill:#2979ff;fill-opacity:1;fill-rule:nonzero;stroke:#ffffea;stroke-width:24.00099945;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       id="path1420"
+       cx="127.99999"
+       cy="127.9995"
+       rx="67.999496"
+       ry="68" />
+    <rect
+       style="opacity:1;fill:#2979ff;fill-opacity:1;fill-rule:nonzero;stroke:#ffffea;stroke-width:8.0012598;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       id="rect1373"
+       width="18.718651"
+       height="66.638397"
+       x="-7.2985492"
+       y="213.66011"
+       rx="3.7448697"
+       ry="3.7448697"
+       transform="matrix(-0.70713056,0.70708301,0.70713056,0.70708301,0,0)" />
+    <rect
+       style="opacity:1;fill:#2979ff;fill-opacity:1;fill-rule:nonzero;stroke:#ffffea;stroke-width:8;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       id="rect1381"
+       width="18.46907"
+       height="18.718651"
+       x="273.31018"
+       y="-11.42011"
+       rx="3.7448697"
+       ry="3.7448697"
+       transform="matrix(0.70713056,0.70708301,0.70713056,-0.70708301,0,0)" />
+    <path
+       sodipodi:type="star"
+       style="opacity:1;fill:#2979ff;fill-opacity:1;fill-rule:nonzero;stroke:#ffffea;stroke-width:8;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       id="path912"
+       sodipodi:sides="3"
+       sodipodi:cx="147.89522"
+       sodipodi:cy="151.64484"
+       sodipodi:r1="10.761622"
+       sodipodi:r2="5.3808107"
+       sodipodi:arg1="0.53643546"
+       sodipodi:arg2="1.583633"
+       inkscape:flatsided="true"
+       inkscape:rounded="0.05"
+       inkscape:randomized="0"
+       d="m 157.14522,157.14484 c -0.47632,0.80107 -18.18255,0.57377 -18.63814,-0.23927 -0.4556,-0.81304 8.59437,-16.03343 9.52628,-16.02147 0.9319,0.012 9.58817,15.45966 9.11186,16.26074 z"
+       inkscape:transform-center-x="-1.4262335"
+       inkscape:transform-center-y="1.2975615"
+       transform="rotate(-45,147.96845,150.61451)" />
+  </g>
+</svg>
