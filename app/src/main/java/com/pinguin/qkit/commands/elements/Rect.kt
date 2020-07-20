@@ -53,7 +53,7 @@ class Rect: Element() {
             findViewById<EditText>(R.id.y).setText(params[1])
             findViewById<EditText>(R.id.w).setText(params[2])
             findViewById<EditText>(R.id.h).setText(params[3])
-            findViewById<EditText>(R.id.a).setText(params[4])
+            findViewById<EditText>(R.id.r).setText(params[4])
             findViewById<CheckBox>(R.id.stroke).also{
                 it.setOnClickListener { _ ->
                     findViewById<EditText>(R.id.s).visibility = if (it.isChecked) View.VISIBLE else View.GONE
@@ -67,7 +67,7 @@ class Rect: Element() {
                 params[1] = findViewById<EditText>(R.id.y).text.toString()
                 params[2] = findViewById<EditText>(R.id.w).text.toString()
                 params[3] = findViewById<EditText>(R.id.h).text.toString()
-                params[4] = findViewById<EditText>(R.id.a).text.toString()
+                params[4] = findViewById<EditText>(R.id.r).text.toString()
                 params[5] = if (findViewById<CheckBox>(R.id.stroke).isChecked)
                     findViewById<EditText>(R.id.s).text.toString()
                 else ""

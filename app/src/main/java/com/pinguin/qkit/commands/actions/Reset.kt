@@ -11,6 +11,10 @@ class Reset : Action() {
     override val type: String = "reset"
     override val resource: Int = 0
 
+    init{
+        params = emptyArray()
+    }
+
     override fun act(canvas: Canvas) {
         canvas.restore()
     }
