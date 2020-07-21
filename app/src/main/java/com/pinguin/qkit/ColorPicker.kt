@@ -1,13 +1,16 @@
 package com.pinguin.qkit
 
 import android.app.AlertDialog
+import android.app.Dialog
 import android.content.Context
+import android.content.DialogInterface
 import android.graphics.Color
 import android.graphics.drawable.GradientDrawable
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.SeekBar
 import android.widget.TextView
+import androidx.fragment.app.DialogFragment
 
 object ColorPicker {
     private var color = Color.WHITE
@@ -37,7 +40,6 @@ object ColorPicker {
                         )
                     )
                 }
-
                 override fun onStartTrackingTouch(seekBar: SeekBar?) {}
                 override fun onStopTrackingTouch(seekBar: SeekBar?) {}
             })

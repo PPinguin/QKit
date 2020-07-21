@@ -4,12 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.CodeFragment"
-    android:background="@drawable/code_bg"
+    android:background="#3C3C3C"
     android:orientation="vertical">
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="32dp" />
+        android:layout_height="48dp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/list"

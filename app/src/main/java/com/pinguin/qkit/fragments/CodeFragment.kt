@@ -18,8 +18,6 @@ import java.util.*
 class CodeFragment : Fragment() {
 
     private lateinit var fragmentView: View
-    private lateinit var code: LinearLayout
-    private lateinit var layout: LinearLayout
     private lateinit var addButton: ImageButton
     private lateinit var recyclerListView: RecyclerView
     private lateinit var touchHelper: ItemTouchHelper
@@ -38,8 +36,6 @@ class CodeFragment : Fragment() {
         if (!this::fragmentView.isInitialized) {
             fragmentView = inflater.inflate(R.layout.fragment_code, container, false)
 
-            code = fragmentView.findViewById(R.id.code)
-            layout = fragmentView.findViewById(R.id.code_layout)
             addButton = fragmentView.findViewById(R.id.add)
             recyclerListView = fragmentView.findViewById(R.id.list)
 

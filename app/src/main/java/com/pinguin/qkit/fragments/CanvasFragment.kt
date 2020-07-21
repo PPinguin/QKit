@@ -18,10 +18,7 @@ import com.pinguin.qkit.R
 
 class CanvasFragment : Fragment() {
 
-    companion object {
-        lateinit var canvas: CanvasView
-    }
-
+    lateinit var canvas: CanvasView
     private lateinit var fragmentView: View
     private lateinit var bgButton: ImageButton
     private lateinit var name: TextView

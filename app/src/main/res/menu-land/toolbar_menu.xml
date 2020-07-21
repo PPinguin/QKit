@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/new_"
+        android:title="@string/new_"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/save"
+        android:title="@string/save"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/open"
+        android:title="@string/open"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/expo"
+        android:title="@string/expo"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/help"
+        android:title="@string/help"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/run"
+        android:title="@string/empty"
+        android:icon="@drawable/ic_run"
+        app:showAsAction="ifRoom"/>
+</menu>

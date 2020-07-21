@@ -10,6 +10,14 @@ import com.pinguin.qkit.commands.Element
 
 class CanvasView(context: Context?) : View(context) {
 
+    companion object{
+        lateinit var canvas: CanvasView
+    }
+
+    init {
+        canvas = this
+    }
+
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG)
 
     fun setBG(color: Int){

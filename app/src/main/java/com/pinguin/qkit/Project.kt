@@ -10,7 +10,6 @@ import androidx.core.view.drawToBitmap
 import com.pinguin.qkit.commands.*
 import com.pinguin.qkit.commands.actions.*
 import com.pinguin.qkit.commands.elements.*
-import com.pinguin.qkit.fragments.CanvasFragment
 import java.io.*
 
 object Project {
@@ -84,14 +83,13 @@ object Project {
 
     fun expo(context: Context): Boolean {
         if (name == "") return false
-        val location = File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM).absolutePath, "QKit")
+        val location = File(context.getExternalFilesDir(Environment.DIRECTORY_PICTURES)?.absolutePath, "QKit")
         location.mkdir()
         val file = File(location.absolutePath, "$name.png")
         lateinit var bitmap:Bitmap
-        CanvasFragment.canvas.apply {
+        CanvasView.canvas.apply {
             layout(left, top, right, bottom)
-            isDrawingCacheEnabled = true
-            bitmap = CanvasFragment.canvas.drawToBitmap(Bitmap.Config.ARGB_8888)
+            bitmap = CanvasView.canvas.drawToBitmap(Bitmap.Config.ARGB_8888)
         }
         var fos: FileOutputStream? = null
         try {
