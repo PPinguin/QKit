@@ -128,7 +128,7 @@ class MainActivity : AppCompatActivity() {
             .setTitle("Новый проект")
             .setView(dialogView)
             .setPositiveButton("Создать") { _: DialogInterface, _: Int ->
-                if (Project.new(this, findViewById<EditText>(R.id.path).text.toString()))
+                if (Project.new(this, dialogView.findViewById<EditText>(R.id.path).text.toString()))
                     setFragment(false)
                 else
                     Toast.makeText(this, "Не удалось создать проект", Toast.LENGTH_SHORT).show()
@@ -156,7 +156,7 @@ class MainActivity : AppCompatActivity() {
                 if (Project.open(choice))
                     setFragment(false)
                 else
-                    Toast.makeText(this, "Не удалось создать проект", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Не удалось открыть проект", Toast.LENGTH_SHORT).show()
             }
             .setNegativeButton("Отмена", null)
             .setNeutralButton("Удалить") { _: DialogInterface, _: Int ->

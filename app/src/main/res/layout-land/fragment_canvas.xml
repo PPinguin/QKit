@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     tools:context=".fragments.CanvasFragment"
     android:background="@drawable/panel_bg"
@@ -9,21 +9,21 @@
     android:orientation="vertical"
     android:padding="8dp">
 
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:fontFamily="@font/roboto_mono"
+        android:textSize="18sp"
+        android:translationZ="1dp"
+        android:layout_margin="8dp"/>
+
     <FrameLayout
         android:id="@+id/frame"
-        android:layout_width="320dp"
-        android:layout_height="320dp"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
         android:layout_weight="0">
-
-        <TextView
-            android:id="@+id/nameText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="start"
-            android:fontFamily="@font/roboto_mono"
-            android:textSize="18sp"
-            android:translationZ="1dp"
-            android:layout_margin="16dp"/>
 
         <ImageButton
             android:id="@+id/bg_button"

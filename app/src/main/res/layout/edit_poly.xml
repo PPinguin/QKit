@@ -109,6 +109,22 @@
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"/>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/r"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:hint="@string/empty"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:maxLength="3" />
+
             </GridLayout>
 
             <CheckBox

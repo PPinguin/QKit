@@ -2,15 +2,20 @@ package com.pinguin.qkit.commands.elements
 
 import android.content.Context
 import android.graphics.Canvas
+import android.graphics.CornerPathEffect
 import android.graphics.Paint
 import android.graphics.Path
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.*
-import com.pinguin.qkit.*
+import com.pinguin.qkit.R
 import com.pinguin.qkit.commands.Command
 import com.pinguin.qkit.commands.Element
-import kotlin.math.*
+import kotlin.math.PI
+import kotlin.math.cos
+import kotlin.math.sin
+import kotlin.math.tan
+
 
 class Poly : Element() {
     override val type: String = "poly"
@@ -18,14 +23,17 @@ class Poly : Element() {
     var path: Path = Path()
 
     init{
-        params = Array(5){""}
+        params = Array(6){""}
     }
 
     override fun draw(canvas: Canvas, paint: Paint) {
-        paint.color = color
-        if (params[4].isNotEmpty()) {
+        paint.apply {
+            color = color
+            pathEffect = CornerPathEffect(params[4].toFloatOrNull()?:0f)
+        }
+        if (params[5].isNotEmpty()) {
             paint.style = Paint.Style.STROKE
-            paint.strokeWidth = params[4].toFloat()
+            paint.strokeWidth = params[5].toFloat()
         }
         canvas.drawPath(
             path,
@@ -40,6 +48,7 @@ class Poly : Element() {
             findViewById<EditText>(R.id.x).setText(params[0])
             findViewById<EditText>(R.id.y).setText(params[1])
             findViewById<EditText>(R.id.w).setText(params[2])
+            findViewById<EditText>(R.id.r).setText(params[4])
             findViewById<Spinner>(R.id.n).apply{
                 adapter = ArrayAdapter(context, R.layout.support_simple_spinner_dropdown_item, f)
                 setSelection(f.indexOf(params[3].toByteOrNull() ?: 0))
@@ -61,15 +70,16 @@ class Poly : Element() {
                 it.setOnClickListener { _ ->
                     findViewById<EditText>(R.id.s).visibility = if (it.isChecked) View.VISIBLE else View.GONE
                 }
-                it.isChecked = params[4].isNotEmpty()
+                it.isChecked = params[5].isNotEmpty()
                 findViewById<EditText>(R.id.s).visibility = if (it.isChecked) View.VISIBLE else View.GONE
             }
-            findViewById<EditText>(R.id.s).setText(params[4])
+            findViewById<EditText>(R.id.s).setText(params[5])
             super.dialog(context, this) {
                 params[0] = findViewById<EditText>(R.id.x).text.toString()
                 params[1] = findViewById<EditText>(R.id.y).text.toString()
                 params[2] = findViewById<EditText>(R.id.w).text.toString()
-                params[4] = if (findViewById<CheckBox>(R.id.stroke).isChecked)
+                params[4] = findViewById<EditText>(R.id.r).text.toString()
+                params[5] = if (findViewById<CheckBox>(R.id.stroke).isChecked)
                     findViewById<EditText>(R.id.s).text.toString()
                 else ""
                 createPath()
